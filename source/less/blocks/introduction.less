@@ -1,0 +1,56 @@
+.introduction {
+  position: relative;
+  background-image: url("../../img/index-background.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.introduction__container::before {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 302px;
+  background-color: #68b73885;
+  z-index: -1;
+}
+
+.introduction__title {
+  margin: 0;
+  padding: 27px 0 25px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+  z-index: 1;
+}
+
+.introduction__slogan {
+  margin: 0;
+  padding: 0 0 29px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  z-index: 1;
+}
+
+.introduction__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.introduction__list {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

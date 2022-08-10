@@ -1,0 +1,39 @@
+.card {
+  background-color: #f2f2f2;
+  padding: 21px 33px 18px 20px;
+
+  &:nth-child(1)::before {
+    content: url("../../img/icon-slim-cat.svg");
+  }
+
+  &:nth-child(2)::before {
+    content: url("../../img/icon-muscle-cat.svg");
+  }
+}
+
+.card__item {
+  display: inline-block;
+  margin: 0 0 29px;
+  .oswald-400();
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.card__description {
+  margin: 0 0 19px;
+  padding-bottom: 23px;
+  .arial-400();
+  font-size: 14px;
+  line-height: 18px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.card__action {
+  .oswald-400();
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: inherit;
+}
