@@ -1,7 +1,3 @@
-.main-header__main-navigation {
-  position: relative;
-}
-
 .main-navigation__toggle {
   min-width: 24px;
   min-height: 38px;
@@ -12,19 +8,17 @@
   background-color: transparent;
 }
 
-
 .main-navigation__container {
+  display: none;
   position: absolute;
+  top: 55px;
+  left: -276px;
 }
 
-
-.site-list {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
-  list-style: none;
-  text-align: center;
-  color: #000000;
+.main-navigation__list {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  margin: 0;
+  padding: 0;
 }

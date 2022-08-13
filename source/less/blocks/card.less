@@ -1,12 +1,16 @@
 .card {
   background-color: #f2f2f2;
   padding: 21px 33px 18px 20px;
+}
 
-  &:nth-child(1)::before {
+.card--slim {
+  &::before {
     content: url("../../img/icon-slim-cat.svg");
   }
+}
 
-  &:nth-child(2)::before {
+.card--muscle {
+  &::before {
     content: url("../../img/icon-muscle-cat.svg");
   }
 }
