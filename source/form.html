@@ -4,11 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
 
-  <header class="main-header">
+  <header class="page__header main-header">
     <a class="main-header__logo" href="#">
       <img class="main-header__logo-image logo-mobile" src="./img/logo-mobile.svg" width="34" height="38"
         alt="Логотип компании Cat Energy">
@@ -22,10 +23,10 @@
       <div class="main-navigation__container">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="#">Главная</a>
+            <a class="site-list__link" href="./index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Каталог продукции</a>
+            <a class="site-list__link" href="./catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">Подбор программы</a>
@@ -35,22 +36,22 @@
     </nav>
   </header>
 
-  <main class="main-container">
+  <main class="page__container main-container">
     <h1 class="visually-hidden">Форма заявки на подбор эксклюзивного плана питания Cat Energy</h1>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form__fieldset">
-        <legend class="form__title">Подбор программы</legend>
-        <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <h2 class="form__title">Подбор программы</h2>
+        <p class="form__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         <div class="form__input-container">
-          <label class="form__label" for="cat-name">Имя:</label>
+          <label class="form__label" for="cat-name">Имя:*</label>
           <input class="form__input input" type="text" name="cat-name" id="cat-name" placeholder="барсик">
         </div>
         <div class="form__input-container">
-          <label class="from__label" for="cat-weight">Вес (кг):*</label>
+          <label class="from__label label" for="cat-weight">Вес (кг):*</label>
           <input class="form__input input" type="number" name="cat-weight" id="cat-weight" value="7">
         </div>
         <div class="form__input-container">
-          <label class="form__label" for="cat-age">Возраст (лет):</label>
+          <label class="form__label label" for="cat-age">Возраст (лет):</label>
           <input class="form__input input" type="number" name="cat-age" id="cat-age" value="7">
         </div>
       </fieldset>
@@ -80,22 +81,23 @@
         </ul>
       </fieldset>
       <fieldset class="form__owner-data owner-data">
-        <legend class="owner-data__legend">Контактные данные (владельца кота)</legend>
+        <h2 class="owner-data__legend legend">Контактные данные (владельца кота)</h2>
         <div class="owner-data__container">
-          <label class="owner-data__label" for="email">E-mail:*</label>
+          <label class="owner-data__label label" for="email">E-mail:*</label>
           <input class="owner-data__input input" type="text" name="email" id="email" placeholder="kuklachev@gmail.com" required>
         </div>
         <div class="owner-data__container">
-          <label class="owner-data__label" for="phone">Телефон:*</label>
+          <label class="owner-data__label label" for="phone">Телефон:*</label>
           <input class="owner-data__input input" type="text" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
         </div>
       </fieldset>
       <fieldset class="form__comment comment">
-        <legend class="comment__legend">Комментарий</legend>
+        <h2 class="comment__legend legend">Комментарий</h2>
         <label class="comment__label visually-hidden" for="comment">Оставтавьте свой комментарий</label>
         <textarea class="comment__area" id="comment">Расскажите обо всех повадках кота</textarea>
       </fieldset>
       <fieldset class="form__checkbox-area checkbox">
+        <h2 class="checkbox__legend legend">Дополнительно</h2>
         <ul class="checkbox__list">
           <li class="checkbox__item">
             <label class="checkbox__element">
@@ -134,11 +136,11 @@
 
   <footer class="main-footer">
     <h2 class="visually-hidden">Контакты</h2>
-    <div class="main-footer__contacts contacts">
+    <div class="main-footer__contacts contacts contacts--grey">
       <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
       <address class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      <map class="contacts__map" name="map"></map>
     </div>
+    <map class="contacts__map map" name="map"></map>
     <div class="main-footer__logo-container">
       <img class="main-footer__logo text-logo" src="./img/logo-text.svg" width="128" height="24"
         alt="Текстовый логотип Cat Energy">
