@@ -9,10 +9,31 @@
   color: #000000;
   background-color: #ffffff;
   border-top: 1px solid #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    width: 440px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width:  @desktop-width) {
+    box-sizing: border-box;
+    width: 480px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    background-color: transparent;
+  }
 }
 
 .site-list__item {
   border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .site-list__link {
@@ -23,4 +44,13 @@
   text-align: center;
   color: inherit;
   padding: 22px 0 24px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    padding: 12px 0;
+  }
+
+  @media (min-width:  @desktop-width) {
+    padding: 8px 0;
+  }
 }

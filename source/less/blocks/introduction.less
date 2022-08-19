@@ -1,18 +1,36 @@
 .introduction {
   position: relative;
-  background-image: url("../../img/index-background.jpg");
+  background-image: url("../../img/index-background-green.jpg");
   background-position: top;
   background-repeat: no-repeat;
-  z-index: -2;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
 }
 
 .introduction__container::before {
-  position: absolute;
-  content: "";
-  width: 320px;
-  height: 302px;
-  background-color: #68b73885;
-  z-index: -1;
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    height: 302px;
+    background-color: #68b738;
+    background-image: url("../../img/index-background-green.jpg");
+    background-position: center;
+    z-index: -1;
+    top: -107px;
+    right: -110px;
+    width: 720px;
+    height: 694px;
+  }
+}
+
+.introduction__container {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .introduction__title {
@@ -24,7 +42,21 @@
   line-height: 36px;
   color: #ffffff;
   text-align: center;
-  z-index: 1;
+  order: 1;
+
+  @media (min-width: @tablet-width) {
+    width: 440px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    margin: 62px auto 41px 87px;
+    padding: 0;
+    text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 111px auto 40px 80px;
+  }
 }
 
 .introduction__slogan {
@@ -37,16 +69,39 @@
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-  z-index: 1;
+  order: 2;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    margin: 0 auto 49px 87px;
+    padding: 0;
+    text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto 52px 80px;
+  }
 }
 
 .introduction__image {
   display: block;
   margin: 0 auto;
+  order: 4;
 }
 
 .introduction__button {
   margin: 0 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto 0 90px;
+    order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto 0 80px;
+  }
 }
 
 .introduction__list {
@@ -57,4 +112,14 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    gap: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
 }

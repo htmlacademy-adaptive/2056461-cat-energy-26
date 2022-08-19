@@ -1,9 +1,21 @@
 .example {
   background-color: #eaeaea;
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+  }
 }
 
 .example__container {
   padding: 25px 20px 40px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 0 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .example__title {
@@ -11,6 +23,18 @@
   .oswald-400();
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 63px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 43px 0 76px 0;
+    background-color: #ffffff;
+  }
 }
 
 .example__text {
@@ -18,11 +42,22 @@
   .arial-400();
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
 }
 
 .example__result-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    align-items: center;
+  }
 }
 
 .example__result {
@@ -31,6 +66,11 @@
   border: 1px solid #cdcdcd;
   border-radius: 4px;
   margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    margin: 0 42px 0 0;
+  }
 }
 
 .example__data {
@@ -44,6 +84,11 @@
   left: 0;
   margin: 14px auto 18px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__description {
@@ -57,6 +102,17 @@
   text-transform: lowercase;
   text-align: center;
   background-color: #eaeaea;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    right: 17px;
+    bottom: -7px;
+    width: max-content;
+    padding: 0 5px;
+    margin: 0;
+    background-color: #ffffff;
+  }
 }
 
 .example__summary {
@@ -65,5 +121,13 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 40px;
+  margin: 0 auto 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 180px;
+    text-align: end;
+    margin: 0 0 0 auto;
+  }
 }
