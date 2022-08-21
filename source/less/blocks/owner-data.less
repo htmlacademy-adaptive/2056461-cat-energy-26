@@ -1,11 +1,21 @@
-.owner-data {
-  border: none;
-  margin: 0;
-  padding: 26px 20px 0;
-}
-
 .owner-data__legend {
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.owner-data__desktop-container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 78px;
+  }
 }
 
 .owner-data__container {
@@ -13,4 +23,21 @@
   align-items: center;
   gap: 11px;
   margin-bottom: 14px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-grow: 1;
+    margin: 0;
+  }
 }

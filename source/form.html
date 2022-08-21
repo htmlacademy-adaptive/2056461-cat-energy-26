@@ -21,7 +21,7 @@
     <nav class="main-header__main-navigation main-navigation">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-navigation__container">
-        <ul class="main-navigation__list site-list">
+        <ul class="main-navigation__list site-list site-list--black">
           <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="./index.html">Главная</a>
           </li>
@@ -39,56 +39,62 @@
   <main class="page__container main-container">
     <h1 class="visually-hidden">Форма заявки на подбор эксклюзивного плана питания Cat Energy</h1>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="form__fieldset">
-        <h2 class="form__title">Подбор программы</h2>
-        <p class="form__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
-        <div class="form__input-container">
-          <label class="form__label" for="cat-name">Имя:*</label>
-          <input class="form__input input" type="text" name="cat-name" id="cat-name" placeholder="барсик">
-        </div>
-        <div class="form__input-container">
-          <label class="from__label label" for="cat-weight">Вес (кг):*</label>
-          <input class="form__input input" type="number" name="cat-weight" id="cat-weight" value="7">
-        </div>
-        <div class="form__input-container">
-          <label class="form__label label" for="cat-age">Возраст (лет):</label>
-          <input class="form__input input" type="number" name="cat-age" id="cat-age" value="7">
-        </div>
-      </fieldset>
-      <fieldset class="form__radio-area radio">
-        <ul class="radio__list">
-          <li class="radio__item">
-            <label class="radio__element">
-              <input class="visually-hidden radio__control-input" type="radio" name="loosing-weight" checked>
-              <span class="radio__control-mark"></span>
-              <span class="radio__text">Похудение</span>
-            </label>
-          </li>
-          <li class="radio__item">
-            <label class="radio__element">
-              <input class="visually-hidden radio__control-input" type="radio" name="gein-weight">
-              <span class="radio__control-mark"></span>
-              <span class="radio__text">Набор массы</span>
-            </label>
-          </li>
-          <li class="radio__item">
-            <label class="radio__element">
-              <input class="visually-hidden radio__control-input" type="radio" name="need-advice">
-              <span class="radio__control-mark"></span>
-              <span class="radio__text">Не знаю (Нужен ваш совет)</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
+      <div class="form__fieldset-radio-wrapper">
+        <fieldset class="form__fieldset">
+          <h2 class="form__title">Подбор программы</h2>
+          <p class="form__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+          <div class="form__input-container">
+            <label class="form__label" for="cat-name">Имя:*</label>
+            <input class="form__input input" type="text" name="cat-name" id="cat-name" placeholder="барсик">
+          </div>
+          <div class="form__input-container">
+            <label class="from__label label" for="cat-weight">Вес (кг):*</label>
+            <input class="form__input input" type="number" name="cat-weight" id="cat-weight" value="7">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label label" for="cat-age">Возраст (лет):</label>
+            <input class="form__input input" type="number" name="cat-age" id="cat-age" value="7">
+          </div>
+        </fieldset>
+        <fieldset class="form__radio-area radio">
+          <ul class="radio__list">
+            <li class="radio__item">
+              <label class="radio__element">
+                <input class="visually-hidden radio__control-input" type="radio" name="loosing-weight" checked>
+                <span class="radio__control-mark"></span>
+                <span class="radio__text">Похудение</span>
+              </label>
+            </li>
+            <li class="radio__item">
+              <label class="radio__element">
+                <input class="visually-hidden radio__control-input" type="radio" name="gein-weight">
+                <span class="radio__control-mark"></span>
+                <span class="radio__text">Набор массы</span>
+              </label>
+            </li>
+            <li class="radio__item">
+              <label class="radio__element">
+                <input class="visually-hidden radio__control-input" type="radio" name="need-advice">
+                <span class="radio__control-mark"></span>
+                <span class="radio__text">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="form__owner-data owner-data">
         <h2 class="owner-data__legend legend">Контактные данные (владельца кота)</h2>
-        <div class="owner-data__container">
-          <label class="owner-data__label label" for="email">E-mail:*</label>
-          <input class="owner-data__input input" type="text" name="email" id="email" placeholder="kuklachev@gmail.com" required>
-        </div>
-        <div class="owner-data__container">
-          <label class="owner-data__label label" for="phone">Телефон:*</label>
-          <input class="owner-data__input input" type="text" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+        <div class="owner-data__desktop-container">
+          <div class="owner-data__container">
+            <label class="owner-data__label label" for="email">E-mail:*</label>
+            <input class="owner-data__input input" type="text" name="email" id="email" placeholder="kuklachev@gmail.com"
+              required>
+          </div>
+          <div class="owner-data__container">
+            <label class="owner-data__label label" for="phone">Телефон:*</label>
+            <input class="owner-data__input input" type="text" name="phone" id="phone" placeholder="8 (960) 900-60-90"
+              required>
+          </div>
         </div>
       </fieldset>
       <fieldset class="form__comment comment">
@@ -128,9 +134,9 @@
             </label>
           </li>
         </ul>
+        <button class="form__button button button--desktop" type="submit">Отправить заявку</button>
+        <small class="form__remark">* — Обязательные поля</small>
       </fieldset>
-      <button class="form__button button" type="submit">Отправить заявку</button>
-      <small class="form__comment">* — Обязательные поля</small>
     </form>
   </main>
 

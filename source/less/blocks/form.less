@@ -1,3 +1,11 @@
+.form__fieldset-radio-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 69px;
+  }
+}
+
 .form__fieldset {
   box-sizing: border-box;
   .oswald-400();
@@ -10,6 +18,18 @@
   margin: 0;
   border: none;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 65px 37px 71px 41px;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 569px;
+    padding: 74px 0 0;
+  }
 }
 
 .form__title {
@@ -17,14 +37,55 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0 0 37px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 54px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 66px 0;
+  }
 }
 
 .form__description {
   .oswald-400();
   font-size: 14px;
   line-height: 18px;
-  margin: 0 0 39px;
+  margin: 0 0 39px 0;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 66px 0;
+  }
+}
+
+.form__radio-area {
+  @media (min-width: @tablet-width) {
+    margin: 0 41px 71px 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    align-self: flex-end;
+  }
+}
+
+.form__owner-data {
+  border: none;
+  margin: 0;
+  padding: 26px 20px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 37px 65px 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 69px;
+  }
 }
 
 .form__input-container {
@@ -32,18 +93,61 @@
   gap: 13px;
   text-transform: uppercase;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+   margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+   }
+  }
 }
 
 .form__button {
-  margin: 0 20px 28px;
+  margin: 0 0 28px;
+
+  @media (min-width: @tablet-width) {
+    width: 282px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    grid-column: 1/2;
+  }
 }
 
-.form__comment {
-  display: block;
+.form__remark {
   .arial-400();
+  display: block;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  padding: 10px 20px 22px;
-  margin: 0 0 32px;
+  padding: 0;
+  margin: 0 auto 32px;
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2/3;
+  }
+}
+
+.form__checkbox-area {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 340px 340px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 568px auto;
+    column-gap: 81px;
+  }
 }

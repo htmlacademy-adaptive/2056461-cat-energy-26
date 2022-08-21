@@ -21,7 +21,7 @@
     <nav class="main-header__main-navigation main-navigation">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-navigation__container">
-        <ul class="main-navigation__list site-list">
+        <ul class="main-navigation__list site-list site-list--black">
           <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="./index.html">Главная</a>
           </li>
@@ -166,54 +166,55 @@
             <button class="product-card__button button" type="button">Заказать</button>
           </div>
         </li>
-      </ul>
-    </section>
-    <section class="main-container__more-results more-results">
-      <button class="more-results__show-more" type="button"><span class="visually-hidden">Показать больше
-          товаров</span></button>
-      <h2 class="more-results__title">Показать еще 100500 товаров</h2>
-      <p class="more-results__text">На самом деле вкусов гораздо больше!</p>
-      <button class="more-results__button button">показать все</button>
-    </section>
-    <section class="main-container__extras extras">
-      <h2 class="extras__title">Дополнительные товары</h2>
-      <ul class="extras__list">
-        <li class="extras__item extras-card">
-          <h3 class="extras-card__title">Сахарозаменитель</h3>
-          <dl class="extras-card__properties">
-            <dt class="extras-card__feature">1 упаковка (100 г)</dt>
-            <dd class="extras-card__description">200 Р.</dd>
-          </dl>
-          <button class="extras-card__button button">Заказать</button>
-        </li>
-        <li class="extras__item extras-card">
-          <h3 class="extras-card__title">Питьевая вода</h3>
-          <dl class="extras-card__properties">
-            <dt class="extras-card__feature">5 литров</dt>
-            <dd class="extras-card__description">50 Р.</dd>
-          </dl>
-          <button class="extras-card__button button">Заказать</button>
-        </li>
-        <li class="extras__item extras-card">
-          <h3 class="extras-card__title">Молоко</h3>
-          <dl class="extras-card__properties">
-            <dt class="extras-card__feature">1 литр</dt>
-            <dd class="extras-card__description">100 Р.</dd>
-          </dl>
-          <button class="extras-card__button button">Заказать</button>
-        </li>
-        <li class="extras__item extras-card">
-          <h3 class="extras-card__title">Витамины</h3>
-          <dl class="extras-card__properties">
-            <dt class="extras-card__feature">1 упаковка (30 г)</dt>
-            <dd class="extras-card__description">300 Р.</dd>
-          </dl>
-          <button class="extras-card__button button">Заказать</button>
+        <li class="main-container__more-results more-results">
+          <button class="more-results__show-more" type="button"><span class="visually-hidden">Показать больше
+              товаров</span></button>
+          <h2 class="more-results__title">Показать еще 100500 товаров</h2>
+          <p class="more-results__text">На самом деле вкусов гораздо больше!</p>
+          <button class="more-results__button button">показать все</button>
         </li>
       </ul>
     </section>
-    <section class="main-container__banner banner">
-      <h2 class="visually-hidden">Специальные акции</h2>
+    <div class="main-container__extras-banner-container">
+      <section class="main-container__extras extras">
+        <h2 class="extras__title">Дополнительные товары</h2>
+        <ul class="extras__list">
+          <li class="extras__item extras-card">
+            <h3 class="extras-card__title">Сахарозаменитель</h3>
+            <dl class="extras-card__properties">
+              <dt class="extras-card__feature">1 упаковка (100 г)</dt>
+              <dd class="extras-card__description">200 Р.</dd>
+            </dl>
+            <button class="extras-card__button button">Заказать</button>
+          </li>
+          <li class="extras__item extras-card">
+            <h3 class="extras-card__title">Питьевая вода</h3>
+            <dl class="extras-card__properties">
+              <dt class="extras-card__feature">5 литров</dt>
+              <dd class="extras-card__description">50 Р.</dd>
+            </dl>
+            <button class="extras-card__button button">Заказать</button>
+          </li>
+          <li class="extras__item extras-card">
+            <h3 class="extras-card__title">Молоко</h3>
+            <dl class="extras-card__properties">
+              <dt class="extras-card__feature">1 литр</dt>
+              <dd class="extras-card__description">100 Р.</dd>
+            </dl>
+            <button class="extras-card__button button">Заказать</button>
+          </li>
+          <li class="extras__item extras-card">
+            <h3 class="extras-card__title">Витамины</h3>
+            <dl class="extras-card__properties">
+              <dt class="extras-card__feature">1 упаковка (30 г)</dt>
+              <dd class="extras-card__description">300 Р.</dd>
+            </dl>
+            <button class="extras-card__button button">Заказать</button>
+          </li>
+        </ul>
+      </section>
+      <section class="main-container__banner banner">
+        <h2 class="visually-hidden">Специальные акции</h2>
         <a class="banner__link" href="#">
           <svg class="banner__icon" width="78" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -231,12 +232,13 @@
           </svg>
           <p class="banner__slogan">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
         </a>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="page__footer main-footer">
     <h2 class="visually-hidden">Контакты</h2>
-    <div class="main-footer__contacts contacts">
+    <div class="main-footer__contacts contacts contacts--grey">
       <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
       <address class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </div>

@@ -18,13 +18,17 @@
     line-height: 24px;
   }
 
-  @media (min-width:  @desktop-width) {
+  @media (min-width: @desktop-width) {
     box-sizing: border-box;
     width: 480px;
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;
     background-color: transparent;
+
+    &.site-list--black {
+      color: #000000;
+    }
   }
 }
 
@@ -50,7 +54,7 @@
     padding: 12px 0;
   }
 
-  @media (min-width:  @desktop-width) {
+  @media (min-width: @desktop-width) {
     padding: 8px 0;
   }
 }
