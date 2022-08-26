@@ -1,20 +1,46 @@
 .comment {
+  box-sizing: border-box;
+  width: 280px;
+  padding: 0;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0 37px 65px 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    width: 1220px;
+  }
 }
 
 .comment__legend {
   margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    text-align: start;
+    margin-bottom: 76px;
+  }
 }
 
 .comment__area {
   box-sizing: border-box;
   width: 100%;
   .oswald-400();
-  size: 16px;
+  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
   padding: 10px;
   border: 1px solid #e7e7e7;
   min-height: 150px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: start;
+    min-height: 174px;
+    padding: 10px 19px;
+  }
 }

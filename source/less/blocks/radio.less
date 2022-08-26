@@ -5,12 +5,32 @@
   text-transform: uppercase;
   border: none;
   border-bottom: 1px solid #e7e7e7;
-  margin: 0;
-  padding: 0;
+  padding: 22px 0 20px;
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    width: 628px;
+    padding: 25px 27px;
+    font-size: 20px;
+    line-height: 30px;
+    border: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    width: 568px;
+    height: 200px;
+  }
 }
 
 .radio__list {
   list-style: none;
   margin: 0;
-  padding: 22px 20px 20px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
 }

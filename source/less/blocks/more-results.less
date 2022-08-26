@@ -4,6 +4,17 @@
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    padding: 52px 36px 38px;
+    border: 1px solid #d9d9d9;
+  }
+}
+
+.more-results__show-more {
+  @media (min-width: @tablet-width) {
+    margin: 0 0 49px;
+  }
 }
 
 .more-results__title {
@@ -12,6 +23,14 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 135px;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0 0 23px;
+  }
 }
 
 .more-results__text {
@@ -19,4 +38,12 @@
   .arial-400();
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 180px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    margin: 0 0 87px;
+  }
 }

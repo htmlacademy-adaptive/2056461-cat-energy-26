@@ -6,6 +6,10 @@
   background-position: center center;
   border: none;
   background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-navigation__container {
@@ -13,6 +17,11 @@
   position: absolute;
   top: 55px;
   left: -276px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: initial;
+  }
 }
 
 .main-navigation__list {
@@ -21,4 +30,12 @@
   justify-items: stretch;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: auto;
+    justify-content: space-between;
+  }
 }
