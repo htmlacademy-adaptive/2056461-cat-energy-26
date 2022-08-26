@@ -1,7 +1,18 @@
 .comment {
-  margin: 0;
+  box-sizing: border-box;
+  width: 280px;
   padding: 0;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0 37px 65px 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    width: 1220px;
+  }
 }
 
 .comment__legend {
@@ -31,9 +42,5 @@
     text-align: start;
     min-height: 174px;
     padding: 10px 19px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 67px;
   }
 }

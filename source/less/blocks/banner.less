@@ -1,4 +1,6 @@
 .banner__link {
+  box-sizing: border-box;
+  width: 280px;
   padding: 58px 58px 43px;
   display: flex;
   flex-direction: column;
@@ -8,6 +10,7 @@
   text-decoration: none;
 
   @media (min-width: @tablet-width) {
+    width: 708px;
     padding: 57px 124px 69px 71px;
     flex-direction: row;
     justify-content: space-between;
@@ -15,7 +18,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    box-sizing: border-box;
+    width: 245px;
     padding: 55px 43px 42px 40px;
     flex-direction: column;
     height: 293px;

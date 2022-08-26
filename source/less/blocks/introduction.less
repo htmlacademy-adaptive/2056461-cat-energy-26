@@ -26,10 +26,18 @@
 }
 
 .introduction__container {
+  margin: 0 auto;
+  width: 280px;
+
   @media (min-width: @tablet-width) {
+    width: 708px;
     position: relative;
     display: flex;
     flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
   }
 }
 
@@ -92,7 +100,7 @@
 }
 
 .introduction__button {
-  margin: 0 20px 20px;
+  margin: 0 0 20px;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto 0 90px;
@@ -114,11 +122,12 @@
   gap: 20px;
 
   @media (min-width: @tablet-width) {
-    width: auto;
+    width: 708px;
     gap: 30px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 1220px;
     flex-direction: row;
     gap: 80px;
   }
