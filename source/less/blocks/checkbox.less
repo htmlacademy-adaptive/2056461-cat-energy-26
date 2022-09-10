@@ -53,3 +53,32 @@
     margin-bottom: 61px;
   }
 }
+
+.checkbox__element {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox__control-mark {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  margin-right: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-right: 19px;
+  }
+}
+
+.checkbox__control-input[type="checkbox"]:checked + .checkbox__control-mark {
+  background-image: url("../../img/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/icon-check-big.svg");
+  }
+}
