@@ -6,21 +6,38 @@
   background-position: center center;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
+.toggle--opened {
+  background-image: url("../../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .main-navigation__container {
-  display: none;
+  z-index: 2;
   position: absolute;
   top: 55px;
   left: -276px;
 
   @media (min-width: @tablet-width) {
     display: block;
-    position: initial;
+    position: static;
+  }
+
+  &.main-nav--nojs {
+    display: block;
+  }
+}
+
+.main-navigation--closed {
+  @media (max-width: @mobile-width-only)  {
+    display: none;
   }
 }
 
