@@ -13,11 +13,22 @@
   }
 }
 
-.main-footer__contacts {
+.main-footer__contacts-desctop-position {
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 95px;
-    right: 50%;
+    min-height: 400px;
+    width: 1220px;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+.main-footer__contacts {
+  @media (min-width: @desktop-width) {
+    margin-top: 95px;
   }
 }
 
