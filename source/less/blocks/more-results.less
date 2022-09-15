@@ -1,25 +1,31 @@
 .more-results {
-  padding: 25px 20px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
-    padding: 52px 36px 38px;
     border: 1px solid #d9d9d9;
   }
 }
 
 .more-results__show-more {
+  padding: 25px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    padding: 52px 36px 38px;
+  }
 }
 
 .more-results__icon {
   width: 30px;
+  height: 30px;
   margin: 0 0 23px;
 
   @media (min-width: @tablet-width) {
     width: 60px;
+    height: 60px;
     margin: 0 0 49px;
   }
 }
@@ -53,4 +59,8 @@
     text-align: center;
     margin: 0 0 87px;
   }
+}
+
+.more-results__button {
+  padding: 10px 39px;
 }

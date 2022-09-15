@@ -1,43 +1,60 @@
 .introduction {
   position: relative;
-  background-image: url("../../img/index-background-green.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-
-  @media (min-width: @tablet-width) {
-    background-image: none;
-  }
 }
 
 .introduction__container::before {
-  @media (min-width: @desktop-width) {
+  @media (max-width: @mobile-width-only) {
     position: absolute;
     content: "";
+    width: 320px;
     height: 302px;
     background-color: #68b738;
     background-image: url("../../img/index-background-green.jpg");
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    left: -20px;
     z-index: -1;
-    top: -107px;
-    right: -110px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index-background-green@2x.jpg");
+      background-size: 320px auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
     width: 720px;
     height: 694px;
+    background-color: #68b738;
+    background-image: url("../../img/index-background-green-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -107px;
+    right: -110px;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index-background-green-desktop@2x.jpg");
+      background-size: 720px auto;
+    }
   }
 }
 
 .introduction__container {
+  position: relative;
   margin: 0 auto;
   width: 280px;
 
   @media (min-width: @tablet-width) {
     width: 708px;
-    position: relative;
+    min-height: 872px;
     display: flex;
     flex-direction: column;
   }
 
   @media (min-width: @desktop-width) {
+    min-height: 667px;
     width: 1220px;
   }
 }
@@ -94,10 +111,24 @@
   }
 }
 
+.introduction__picture {
+  order: 4;
+  margin: 0 auto;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 136px;
+    left: 448px;
+  }
+}
+
 .introduction__image {
   display: block;
-  margin: 0 auto;
-  order: 4;
 }
 
 .introduction__button {

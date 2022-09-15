@@ -2,11 +2,16 @@
   background-color: #eaeaea;
 
   @media (min-width: @tablet-width) {
-    background-color: #ffffff;
+    background: linear-gradient(#ffffff 619px, #eaeaea 619px);
+  }
+
+  @media (min-width: @desktop-width) {
+    background: linear-gradient(#ffffff 179px, #f2f2f2 179px);
   }
 }
 
 .example__container {
+  position: relative;
   width: 280px;
   margin: 0 auto;
   padding: 25px 0 40px;
@@ -18,7 +23,9 @@
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 436px 591px;
+    justify-content: space-between;
   }
 }
 
@@ -31,13 +38,12 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 63px;
+    margin: 43px 0 63px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
-    padding: 43px 0 76px 0;
-    background-color: #ffffff;
+    margin: 43px 0 146px;
+    padding: 0;
   }
 }
 
@@ -52,6 +58,10 @@
     line-height: 24px;
     margin-bottom: 54px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 69px;
+  }
 }
 
 .example__result-container {
@@ -61,6 +71,14 @@
 
   @media (min-width: @tablet-width) {
     align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: 162px 162px;
+    column-gap: 42px;
+    row-gap: 55px;
   }
 }
 
@@ -74,6 +92,10 @@
   @media (min-width: @tablet-width) {
     width: 162px;
     margin: 0 42px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -117,6 +139,10 @@
     margin: 0;
     background-color: #ffffff;
   }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .example__summary {
@@ -133,5 +159,37 @@
     width: 180px;
     text-align: end;
     margin: 0 0 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+    width: auto;
+    margin: 0;
+    grid-column: 1/-1;
+  }
+}
+
+.example__picture {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto 15px;
+
+  @media (min-width: @tablet-width) {
+    margin: 80px auto 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+}
+
+.example__image {
+  display: inherit;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 25px;
   }
 }
