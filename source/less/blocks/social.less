@@ -1,5 +1,23 @@
 .social {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: @desktop-width) {
+    margin-top: -10px;
+    align-items: flex-start;
+  }
+}
+
+.social__link {
+  display: block;
+  margin: 0;
+  min-width: 28px;
+  min-height: 22px;
+}
+
+.social__icon {
+  display: block;
+  margin: 0;
 }
