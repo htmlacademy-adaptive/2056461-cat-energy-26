@@ -44,21 +44,28 @@
 .card__icon {
   margin-right: 19px;
 
-  &.icon--muscle {
-    margin-right: 11px;
-  }
-
   @media (min-width: @tablet-width) {
     position: absolute;
     width: 200px;
     height: 211px;
-    margin: 0;
+    top: 81px;
+    right: 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 100px;
     height: 106px;
     position: initial;
+  }
+
+  &.icon--muscle {
+    margin-right: 11px;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 0;
+      width: 268px;
+      height: 200px;
+    }
   }
 }
 

@@ -4,16 +4,19 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
-    padding: 26px 38px 28px;
+    padding: 26px 38px 26px;
     display: grid;
     align-items: baseline;
     grid-template-columns: 1fr 1fr;
     row-gap: 21px;
+    border: 1px solid #d9d9d9;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 15px 0 17px;
+    padding: 15px 0 15px;
     grid-template-columns: 324px 288px 38px 244px;
+    border-left: none;
+    border-right: none;
   }
 }
 
@@ -48,6 +51,12 @@
 
   @media (min-width: @desktop-width) {
     justify-content: space-between;
+  }
+}
+
+.extras-card__description {
+  @media (min-width: @tablet-width) {
+    margin-left: 49px;
   }
 }
 
