@@ -1,18 +1,15 @@
 .main-header {
-  padding: 11px 0 18px;
+  padding: 10px 0 12px;
   margin: 0 auto;
   width: 280px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
     box-sizing: border-box;
-    padding: 24px 0 12px;
+    padding: 24px 0 0;
     width: 708px;
-    border: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -28,13 +25,19 @@
 }
 
 .main-header__logo {
+  margin-right: 56px;
+
   @media (min-width: @tablet-width) {
-    margin-right: 12px;
+    margin-right: auto;
   }
 }
 
 .main-header__text-logo {
+  margin-top: 2px;
+  margin-right: auto;
+
+
   @media (min-width: @tablet-width) {
-    margin-right: auto;
+    display: none;
   }
 }

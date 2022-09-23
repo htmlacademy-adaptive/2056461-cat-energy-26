@@ -17,6 +17,12 @@
   flex-grow: 1;
 }
 
-.page__header {
+.page__header-wrapper {
+  width: 100%;
 
+  @media (max-width: @mobile-width-only) {
+    &.header-wrapper--greyline {
+      border-bottom: 1px solid #e6e6e6;
+    }
+  }
 }
