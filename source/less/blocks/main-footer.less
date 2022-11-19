@@ -7,9 +7,20 @@
 .main-footer__contacts-wrapper {
   position: relative;
   background-color: #f2f2f2;
+  background-image: url("../../img/location-map.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
 
   &.contacts-wrapper--white {
     background-color: #ffffff;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/location-map-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/location-map-desktop.jpg");
   }
 }
 
@@ -78,6 +89,14 @@
   margin: 0 auto;
   padding: 39px 75px 32px;
   border-bottom: 1px solid #d9d9d9;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 
   @media (min-width: @tablet-width) {
     width: auto;

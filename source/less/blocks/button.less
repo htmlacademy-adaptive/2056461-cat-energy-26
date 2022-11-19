@@ -15,10 +15,28 @@
   text-align: center;
   cursor: pointer;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #ffffff30;
+  }
+
   &.button--introduction {
     font-size: 14px;
     line-height: 18px;
     padding: 12px 44px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 15px 27px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 17px 27px;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -29,7 +47,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 17px 28px;
+    padding: 10px 28px;
     min-width: 168px;
   }
 }
@@ -40,9 +58,24 @@
   }
 }
 
+.button--form {
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .button--catalog-grey {
   color: #000000;
   background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: #44444430;
+  }
 
   @media (min-width: @desktop-width) {
     padding: 10px 39px;

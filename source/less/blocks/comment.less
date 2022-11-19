@@ -6,21 +6,28 @@
 
   @media (min-width: @tablet-width) {
     width: 708px;
-    padding: 0 37px 65px 41px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
     width: 1220px;
   }
 }
 
 .comment__legend {
-  margin-bottom: 38px;
+  margin-bottom: 35px;
+  background-color: #ffffff;
+  width: 143px;
 
   @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    width: 259px;
+    padding-left: 39px;
     text-align: start;
     margin-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -40px;
   }
 }
 
@@ -42,5 +49,12 @@
     text-align: start;
     min-height: 174px;
     padding: 10px 19px;
+    width: 631px;
+    margin: 0 37px 0 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0;
   }
 }

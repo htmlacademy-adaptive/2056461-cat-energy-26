@@ -2,9 +2,31 @@
   position: relative;
   width: 4px;
   background-color: #666666;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #68b738;
+
+    & .slider__button {
+      box-shadow: inset 0 0 0 2px #68b738;
+      color: #68b738;
+    }
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 2px #5eaa2f;
+    color: #5eaa2f;
+
+    & .slider__button {
+      box-shadow: inset 0 0 0 2px #5eaa2f;
+      color: #5eaa2f;
+    }
+  }
 }
 
 .slider__button {
+  color: #666666;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,12 +38,9 @@
   border-radius: 50%;
   border: none;
   box-shadow: inset 0 0 0 2px #666666;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     top: 236px;
   }
-}
-
-.slider__icon {
-
 }

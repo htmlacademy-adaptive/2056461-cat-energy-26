@@ -2,6 +2,8 @@ import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import less from 'gulp-less';
 import postcss from 'gulp-postcss';
+import csso from 'postcss-csso';
+import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
@@ -12,11 +14,14 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
+
 
 // Server
 
